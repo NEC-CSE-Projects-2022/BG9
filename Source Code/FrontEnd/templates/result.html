@@ -1,0 +1,26 @@
+
+
+{% extends "layout.html" %}
+{% block content %}
+  <section class="grid">
+    <div class="card">
+      <h2>Prediction</h2>
+      <p><strong>Label:</strong> {{ pred_label }}</p>
+
+      {% if pred_label == "Uncertain" %}
+        <p>We cannot process this pair.</p>
+      {% else %}
+        <p><strong>P(class = Microplastic):</strong> {{ prob }}</p>
+      {% endif %}
+
+      <a href="{{ url_for('predict') }}" class="btn btn-link">← Classify another pair</a>
+    </div>
+
+    {% if pred_label != "Uncertain" and fused_url %}
+      <div class="card">
+        <h2>Fused HSL Preview</h2>
+        <img src="{{ fused_url }}" alt="Fused HSL image" class="preview">
+      </div>
+    {% endif %}
+  </section>
+{% endblock %}
