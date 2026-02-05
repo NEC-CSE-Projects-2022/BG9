@@ -1,111 +1,187 @@
-
 # Team Number – Project Title
 
 ## Team Info
-- 22471A05C2 — **POLISETTY RISHITHA SAI SRI** ( [LinkedIn](https://www.linkedin.com/in/rishitha-polisetty-914293271/) )
-_Work Done: Dataset preprocessing, HSL image fusion, model training and evaluation, results analysis
+. 22471A05C2 — POLISETTY RISHITHA SAI SRI
+  . LinkedIn: https://www.linkedin.com/in/rishitha-polisetty-914293271/
+  . Work Done:
+    . Dataset preprocessing
+    . HSL image fusion
+    . Model training and evaluation
+    . Results analysis
 
-- 22471A05B0 — **NAGASARAPU MOHANA SRI KRUPA** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
-_Work Done: Literature survey, data augmentation strategies, performance comparison with baseline CNN models
+. 22471A05B0 — NAGASARAPU MOHANA SRI KRUPA
+  . LinkedIn: https://linkedin.com/in/xxxxxxxxxx
+  . Work Done:
+    . Literature survey
+    . Data augmentation strategies
+    . Performance comparison with baseline CNN models
 
-- 22471A05C5 — **RAYALA LAKSHMI** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
-_Work Done: Model architecture study, result visualization (confusion matrix, ROC), documentation and report preparation
+. 22471A05C5 — RAYALA LAKSHMI
+  . LinkedIn: https://linkedin.com/in/xxxxxxxxxx
+  . Work Done:
+    . Model architecture study
+    . Result visualization (Confusion Matrix, ROC)
+    . Documentation and report preparation
 
-
-
----
 
 ## Abstract
-Microplastic pollution has emerged as a serious environmental threat due to its harmful impact on ecosystems and human health. Manual identification of microplastics is inefficient and time-consuming. This project proposes an automated microplastic classification framework using Swin Transformer V2 on holographic images. Amplitude and phase images from the HMPD dataset are fused using the HSL color space, enriching both spatial and color information. The proposed approach achieves an accuracy of 91.65% and an F1-score of 91.79%, outperforming traditional CNN-based models. The results demonstrate the effectiveness of vision transformers for precise microplastic detection in environmental monitoring applications. 
+. Microplastic pollution poses a serious environmental and health threat
+. Manual identification is time-consuming and inefficient
+. This project proposes an automated classification system using Swin Transformer V2
+. Holographic amplitude and phase images are fused using HSL color space
+. The model achieves:
+  . Accuracy: 91.65%
+  . F1-score: 91.79%
+. The approach outperforms traditional CNN-based models
+. Demonstrates suitability for environmental monitoring applications
 
-
-
----
 
 ## Paper Reference (Inspiration)
-👉 **[Paper Title Microplastic Classification in Holographic Images Using Swin Transformer V2
-  – Author Names Teresa Cacace, Marco Del-Coco, ierluigi Carcagnì,Mariacristina Cocca, Melania aturzo, and Cosimo Distante ]([Paper URL here](https://link.springer.com/chapter/10.1007/978-3-031-43153-1_11))**
-Original conference/IEEE paper used as inspiration for the model.
+. Title: Microplastic Classification in Holographic Images Using Swin Transformer V2
+. Authors:
+  . Teresa Cacace
+  . Marco Del-Coco
+  . Pierluigi Carcagnì
+  . Mariacristina Cocca
+  . Melania Maturzo
+  . Cosimo Distante
+. Source:
+  . https://link.springer.com/chapter/10.1007/978-3-031-43153-1_11
 
----
 
 ## Our Improvement Over Existing Paper
-Unlike earlier CNN-based and ViT models, this project employs Swin Transformer V2, which uses hierarchical shifted-window self-attention. This significantly improves feature learning for minute holographic textures. Compared to previous approaches, our method achieves a better balance between precision and recall, reducing false positives while maintaining high detection accuracy. The model also scales efficiently for high-resolution scientific images, making it suitable for real-time environmental monitoring.
+. Uses Swin Transformer V2 instead of CNNs and basic ViT models
+. Employs hierarchical shifted-window self-attention
+. Improves learning of fine holographic textures
+. Achieves better precision–recall balance
+. Reduces false positives
+. Scales efficiently for high-resolution scientific images
+. Suitable for real-time monitoring systems
 
----
 
 ## About the Project
-What it does: Automatically classifies holographic images as microplastic or non-microplastic
-Why it is useful: Enables fast, accurate, and scalable microplastic detection, reducing human effort
+. What it does:
+  . Automatically classifies holographic images as microplastic or non-microplastic
+. Why it is useful:
+  . Faster and more accurate detection
+  . Reduces human effort
+  . Enables scalable monitoring
 
-Workflow:
-Input: Amplitude & Phase holographic images
-→ Processing: Grayscale conversion, HSL fusion, data augmentation
-→ Model: Swin Transformer V2
-→ Output: Binary classification (Microplastic / Non-Microplastic)
+. Workflow:
+  . Input:
+    . Amplitude holographic images
+    . Phase holographic images
+  . Processing:
+    . Grayscale conversion
+    . HSL image fusion
+    . Data augmentation
+  . Model:
+    . Swin Transformer V2
+  . Output:
+    . Binary classification (Microplastic / Non-Microplastic)
 
----
 
 ## Dataset Used
-👉 **[Holographic Microplastic Dataset (HMPD)]([Dataset URL](https://github.com/beppe2hd/HMPD/tree/main ))**
+. Dataset Name:
+  . Holographic Microplastic Dataset (HMPD)
+. Dataset Link:
+  . https://github.com/beppe2hd/HMPD/tree/main
 
-**Dataset Details:**
-Total images: 13,172
-Pair of images: 6586
-Classes: Microplastic (3,293) and Non-Microplastic (3,293)
-Image type: Paired amplitude and phase holographic images
-Dataset is balanced, ensuring unbiased model training
+. Dataset Details:
+  . Total images: 13,172
+  . Image pairs: 6,586
+  . Classes:
+    . Microplastic: 3,293
+    . Non-Microplastic: 3,293
+  . Image type:
+    . Paired amplitude and phase holographic images
+  . Dataset is balanced to avoid bias
 
----
 
 ## Dependencies Used
-Python, PyTorch, OpenCV, NumPy, Matplotlib, Torchvision, Scikit-learn
+. Python
+. PyTorch
+. OpenCV
+. NumPy
+. Matplotlib
+. Torchvision
+. Scikit-learn
 
----
 
 ## EDA & Preprocessing
-Conversion of amplitude and phase images to grayscale
-HSL fusion (Amplitude → Hue, Phase → Saturation, Lightness = 0.5)
-RGB conversion and resizing to 256×256
-Data augmentation: horizontal flip, vertical flip, rotation (±15°), color jittering
-Train–validation split: 80% – 20%
+. Convert amplitude and phase images to grayscale
+. Perform HSL fusion:
+  . Hue → Amplitude
+  . Saturation → Phase
+  . Lightness → 0.5
+. Convert fused HSL image to RGB
+. Resize images to 256 × 256
+. Data augmentation techniques:
+  . Horizontal flip
+  . Vertical flip
+  . Rotation (±15 degrees)
+  . Color jittering
+. Train–validation split:
+  . Training: 80%
+  . Validation: 20%
 
----
 
 ## Model Training Info
-Model: Swin Transformer V2
-Loss function: Cross-entropy loss
-Optimizer: Adam
-Training epochs: 40
-Attention mechanism: Shifted window self-attention for hierarchical feature learning
+. Model:
+  . Swin Transformer V2
+. Loss function:
+  . Cross-entropy loss
+. Optimizer:
+  . Adam
+. Training epochs:
+  . 40
+. Attention mechanism:
+  . Shifted window self-attention
+  . Hierarchical feature learning
 
----
 
 ## Model Testing / Evaluation
-Metrics used: Accuracy, Precision, Recall, F1-score, Confusion Matrix, ROC-AUC
-Validation accuracy consistently ranged between 85% and 93%
-ROC-AUC achieved: 0.979, indicating strong class separability
+. Evaluation metrics:
+  . Accuracy
+  . Precision
+  . Recall
+  . F1-score
+  . Confusion Matrix
+  . ROC-AUC
+. Validation accuracy range:
+  . 85% – 93%
+. ROC-AUC score:
+  . 0.979
+. Indicates strong class separability
 
----
 
 ## Results
-Accuracy: 91.65%
-Precision: 94.6%
-Recall: 89.3%
-F1-Score: 91.7%
+. Accuracy: 91.65%
+. Precision: 94.6%
+. Recall: 89.3%
+. F1-score: 91.7%
+. Performance comparison:
+  . Outperformed AlexNet
+  . Outperformed ResNet18
+  . Outperformed VGG11
 
-The Swin Transformer V2 with HSL-fused images significantly outperformed AlexNet, ResNet18, and VGG11 models.
-
----
 
 ## Limitations & Future Work
-Dataset consists mainly of laboratory-captured images
-Only binary classification (microplastic vs non-microplastic)
-Future work includes multi-class classification, real-world water samples, and real-time deployment on embedded systems
+. Dataset mainly consists of laboratory-captured images
+. Only binary classification implemented
+. Future enhancements:
+  . Multi-class microplastic classification
+  . Real-world water sample testing
+  . Real-time deployment
+  . Embedded and edge-device optimization
 
----
 
 ## Deployment Info
-The model can be integrated into compact environmental monitoring systems and holographic imaging devices for real-time microplastic detection in water bodies. With optimization, it can be deployed on edge devices for continuous monitoring.
-
----
+. Model can be integrated into:
+  . Environmental monitoring systems
+  . Holographic imaging devices
+. Enables:
+  . Real-time microplastic detection
+  . Continuous water quality monitoring
+. With optimization:
+  . Suitable for edge and embedded systems
