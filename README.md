@@ -50,7 +50,8 @@ Input: Amplitude & Phase holographic images
 👉 **[Holographic Microplastic Dataset (HMPD)]([Dataset URL](https://github.com/beppe2hd/HMPD/tree/main ))**
 
 **Dataset Details:**
-Total images: 6,586
+Total images: 13,172
+Pair of images: 6586
 Classes: Microplastic (3,293) and Non-Microplastic (3,293)
 Image type: Paired amplitude and phase holographic images
 Dataset is balanced, ensuring unbiased model training
