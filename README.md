@@ -2,7 +2,7 @@
 # Team Number – Project Title
 
 ## Team Info
-- 22471A05C2 — **POLISETTY RISHITHA SAI SRI** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A05C2 — **POLISETTY RISHITHA SAI SRI** ( [LinkedIn](https://www.linkedin.com/in/rishitha-polisetty-914293271/) )
 _Work Done: Dataset preprocessing, HSL image fusion, model training and evaluation, results analysis
 
 - 22471A05B0 — **NAGASARAPU MOHANA SRI KRUPA** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
