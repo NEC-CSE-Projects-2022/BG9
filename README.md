@@ -17,7 +17,7 @@
     . Performance comparison with baseline CNN models
 
 . 22471A05C5 — RAYALA LAKSHMI
-  . LinkedIn: https://linkedin.com/in/lakshmi
+  . LinkedIn: https://www.linkedin.com/in/rayala-lakshmi-456272276/
   . Work Done:
     . Model architecture study
     . Result visualization (Confusion Matrix, ROC)
