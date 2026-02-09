@@ -10,14 +10,14 @@
     . Results analysis
 
 . 22471A05B0 — NAGASARAPU MOHANA SRI KRUPA
-  . LinkedIn: https://linkedin.com/in/xxxxxxxxxx
+  . LinkedIn: https://www.linkedin.com/in/mohana1414
   . Work Done:
     . Literature survey
     . Data augmentation strategies
     . Performance comparison with baseline CNN models
 
 . 22471A05C5 — RAYALA LAKSHMI
-  . LinkedIn: https://linkedin.com/in/xxxxxxxxxx
+  . LinkedIn: https://linkedin.com/in/lakshmi
   . Work Done:
     . Model architecture study
     . Result visualization (Confusion Matrix, ROC)
