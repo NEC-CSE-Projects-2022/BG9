@@ -109,99 +109,154 @@
 
 . Dataset Details:
   . Total images: 13,172
+  
   . Image pairs: 6,586
+  
   . Classes:
     . Microplastic: 3,293
+    
     . Non-Microplastic: 3,293
+    
   . Image type:
     . Paired amplitude and phase holographic images
+    
   . Dataset is balanced to avoid bias
 
 
 ## Dependencies Used
 . Python
+
 . PyTorch
+
 . OpenCV
+
 . NumPy
+
 . Matplotlib
+
 . Torchvision
+
 . Scikit-learn
 
 
 ## EDA & Preprocessing
 . Convert amplitude and phase images to grayscale
+
 . Perform HSL fusion:
   . Hue → Amplitude
+  
   . Saturation → Phase
+  
   . Lightness → 0.5
+  
 . Convert fused HSL image to RGB
+
 . Resize images to 256 × 256
+
 . Data augmentation techniques:
+
   . Horizontal flip
+  
   . Vertical flip
+  
   . Rotation (±15 degrees)
+  
   . Color jittering
+  
 . Train–validation split:
+
   . Training: 80%
+  
   . Validation: 20%
 
 
 ## Model Training Info
 . Model:
   . Swin Transformer V2
+  
 . Loss function:
   . Cross-entropy loss
+  
 . Optimizer:
   . Adam
+  
 . Training epochs:
   . 40
+  
 . Attention mechanism:
   . Shifted window self-attention
+  
   . Hierarchical feature learning
 
 
 ## Model Testing / Evaluation
 . Evaluation metrics:
   . Accuracy
+  
   . Precision
+  
   . Recall
+  
   . F1-score
+  
   . Confusion Matrix
+  
   . ROC-AUC
+  
 . Validation accuracy range:
   . 85% – 93%
+  
 . ROC-AUC score:
   . 0.979
+  
 . Indicates strong class separability
 
 
 ## Results
 . Accuracy: 91.65%
+
 . Precision: 94.6%
+
 . Recall: 89.3%
+
 . F1-score: 91.7%
+
 . Performance comparison:
   . Outperformed AlexNet
+  
   . Outperformed ResNet18
+  
   . Outperformed VGG11
 
 
 ## Limitations & Future Work
 . Dataset mainly consists of laboratory-captured images
+
 . Only binary classification implemented
+
 . Future enhancements:
+
   . Multi-class microplastic classification
+  
   . Real-world water sample testing
+  
   . Real-time deployment
+  
   . Embedded and edge-device optimization
 
 
 ## Deployment Info
 . Model can be integrated into:
+
   . Environmental monitoring systems
+  
   . Holographic imaging devices
+  
 . Enables:
+
   . Real-time microplastic detection
+  
   . Continuous water quality monitoring
+  
 . With optimization:
   . Suitable for edge and embedded systems
