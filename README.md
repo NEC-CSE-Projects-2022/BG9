@@ -25,19 +25,27 @@
 
 
 ## Abstract
+
 . Microplastic pollution poses a serious environmental and health threat
+
 . Manual identification is time-consuming and inefficient
+
 . This project proposes an automated classification system using Swin Transformer V2
+
 . Holographic amplitude and phase images are fused using HSL color space
+
 . The model achieves:
   . Accuracy: 91.65%
   . F1-score: 91.79%
+  
 . The approach outperforms traditional CNN-based models
+
 . Demonstrates suitability for environmental monitoring applications
 
 
 ## Paper Reference (Inspiration)
 . Title: Microplastic Classification in Holographic Images Using Swin Transformer V2
+
 . Authors:
   . Teresa Cacace
   . Marco Del-Coco
@@ -45,23 +53,31 @@
   . Mariacristina Cocca
   . Melania Maturzo
   . Cosimo Distante
+  
 . Source:
   . https://link.springer.com/chapter/10.1007/978-3-031-43153-1_11
 
 
 ## Our Improvement Over Existing Paper
 . Uses Swin Transformer V2 instead of CNNs and basic ViT models
+
 . Employs hierarchical shifted-window self-attention
+
 . Improves learning of fine holographic textures
+
 . Achieves better precision–recall balance
+
 . Reduces false positives
+
 . Scales efficiently for high-resolution scientific images
+
 . Suitable for real-time monitoring systems
 
 
 ## About the Project
 . What it does:
   . Automatically classifies holographic images as microplastic or non-microplastic
+  
 . Why it is useful:
   . Faster and more accurate detection
   . Reduces human effort
@@ -71,12 +87,15 @@
   . Input:
     . Amplitude holographic images
     . Phase holographic images
+    
   . Processing:
     . Grayscale conversion
     . HSL image fusion
     . Data augmentation
+    
   . Model:
     . Swin Transformer V2
+    
   . Output:
     . Binary classification (Microplastic / Non-Microplastic)
 
@@ -84,6 +103,7 @@
 ## Dataset Used
 . Dataset Name:
   . Holographic Microplastic Dataset (HMPD)
+  
 . Dataset Link:
   . https://github.com/beppe2hd/HMPD/tree/main
 
