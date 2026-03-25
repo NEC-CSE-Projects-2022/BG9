@@ -1,4 +1,4 @@
-# Team Number – Project Title
+# BG9 – Microplastic Classification in Holographic Images Using Swin Transformer V2
 
 ## Team Info
 . 22471A05C2 — POLISETTY RISHITHA SAI SRI
